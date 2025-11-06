@@ -29,7 +29,7 @@ docker exec -it cmpc-backend npm run migration:run
 
 ### Without Docker
 
-See detailed instructions in the main [README.md](./README.md)
+See detailed instructions in the main [README.md](../README.md)
 
 ## Architecture
 
@@ -51,10 +51,10 @@ See detailed instructions in the main [README.md](./README.md)
 
 ## Documentation
 
-- [Complete Documentation](./README.md)
+- [Complete Documentation](../README.md)
 - [API Documentation](http://localhost:3000/api/docs) (when running)
-- [Backend README](./backend/README.md)
-- [Frontend README](./frontend/README.md)
+- [Backend README](../backend/README.md)
+- [Frontend README](../frontend/README.md)
 
 ---
 

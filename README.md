@@ -559,3 +559,12 @@ MIT
 ---
 
 Desarrollado con ❤️ para CMPC
+
+## 📚 Documentación Adicional
+
+- [📖 Guía de Inicio Rápido](./QUICK_START.md)
+- [🏗️ Arquitectura del Sistema](./ARCHITECTURE.md)
+- [🎨 Sistema de Diseño Frontend](./frontend/DESIGN_SYSTEM.md)
+- [⚙️ Backend API Documentation](./backend/README.md)
+- [🖥️ Frontend Documentation](./frontend/README.md)
+- [💾 Guía de Storage (GCP Mock)](./backend/STORAGE_MOCK_GUIDE.md)
