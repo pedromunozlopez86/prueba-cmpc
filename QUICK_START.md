@@ -114,7 +114,15 @@ Deberías ver un mensaje similar a:
 
 == 20241106000002-create-books: migrating =======
 == 20241106000002-create-books: migrated (0.015s)
+
+== 20241106000003-change-price-to-integer: migrating =======
+== 20241106000003-change-price-to-integer: migrated (0.012s)
 ```
+
+**Notas importantes**:
+- El sistema almacena los precios en formato CLP (pesos chilenos) como enteros sin decimales.
+- Las imágenes se gestionan con un sistema de Storage en modo MOCK para desarrollo (genera URLs simuladas de GCP Storage).
+- Para producción, cambia `STORAGE_MODE=mock` a `STORAGE_MODE=gcp` en el `.env` y configura `GCP_KEYFILE_PATH`.
 
 ### 5. Iniciar Aplicación
 

@@ -122,6 +122,41 @@ bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium
 - **Hover**: transition-colors duration-200
 - **General**: transition-all duration-200
 
+## Formato de Datos
+
+### Precios (CLP - Pesos Chilenos)
+
+Los precios se almacenan como **enteros** (INTEGER) sin decimales, ya que el peso chileno no utiliza decimales.
+
+```tsx
+// Formato de precio para visualización
+const formattedPrice = price.toLocaleString('es-CL');
+// Ejemplo: 25000 → "25.000"
+
+// Input de precio
+<input 
+  type="number" 
+  step="1"  // Solo números enteros
+  placeholder="Ej: 25000"
+/>
+
+// Parsing del input
+const price = parseInt(priceInput, 10);
+
+// Visualización en tabla
+<td className="text-right font-medium">
+  ${book.price.toLocaleString('es-CL')}
+</td>
+```
+
+### Fechas
+
+Las fechas se muestran en formato ISO y se formatean con opciones locales de Chile:
+
+```tsx
+const formattedDate = new Date(dateString).toLocaleDateString('es-CL');
+```
+
 ## Ejemplo de Uso
 
 ```tsx

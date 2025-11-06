@@ -47,6 +47,7 @@
 │  │  │  • AuthService (JWT, Validation)               │     │   │
 │  │  │  • BooksService (Business Logic)               │     │   │
 │  │  │  • UsersService (User Management)              │     │   │
+│  │  │  • StorageService (GCP Storage - MOCK mode)    │     │   │
 │  │  │                                                 │     │   │
 │  │  │  Logger: Winston                               │     │   │
 │  │  └────────────────────────────────────────────────┘     │   │
@@ -76,10 +77,10 @@
 │  │  │ email (UQ)   │         │ title (IX)   │             │   │
 │  │  │ password     │         │ author (IX)  │             │   │
 │  │  │ name         │         │ editorial(IX)│             │   │
-│  │  │ role         │         │ price        │             │   │
+│  │  │ role         │         │ price (INT)  │ CLP format  │   │
 │  │  │ createdAt    │         │ availability │             │   │
 │  │  │ updatedAt    │         │ genre (IX)   │             │   │
-│  │  └──────────────┘         │ imageUrl     │             │   │
+│  │  └──────────────┘         │ imageUrl     │ GCP Storage │   │
 │  │                            │ description  │             │   │
 │  │                            │ deletedAt    │ Soft Delete│   │
 │  │                            │ createdAt    │             │   │
